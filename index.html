@@ -8,19 +8,26 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
+
     <div>
         <img class="Logo" src="imagenes/Logo.png" alt="Logo de Alura">
     </div>
         <main>
+
             <section class="container-encripador">
-                <textarea id="texto-encriptado" class="texto-encriptado" name="texto" placeholder="Ingrese el texto aquí" ></textarea>
+                <textarea type="text" id="textoUsuario" placeholder="Ingrese el texto aquí" ></textarea>
 
                 <div class="info">
                     <img src="imagenes/Frame 1.png" alt="Icono Información">
                 </div>
 
+                <div>
+                    <button id="guardarTexto">Encriptar</button>
+                    <button>Desencriptar</button>
+                </div>
+                <div id="texto-a-encriptar"></div>
             </section>
         </main>
-
+        <script src="app.js"></script>
 </body>
 </html>
