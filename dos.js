@@ -5,14 +5,6 @@ document.addEventListener("DOMContentLoaded", function() {
     campoTexto.addEventListener("input", function() {
         let textoIngresado = campoTexto.value;
         campoTexto.value = textoIngresado.toLowerCase();
-
-        if (textoIngresado.trim() !== "") {
-            textoaMensaje.textContent = textoIngresado;
-            imagenPredeterminada.style.display = "none";
-        } else {
-            textoaMensaje.textContent = "Ningún mensaje fue encontrado";
-            imagenPredeterminada.style.display = "block";
-        }
     });
 
     let botonEncriptar = document.getElementById("Encriptar");

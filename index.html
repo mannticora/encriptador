@@ -16,25 +16,30 @@
 
             <section class="container-encripador">
 
-                <textarea type="text" id="textoUsuario" placeholder="Ingrese el texto aquí" ></textarea>
+                <textarea class="text-area" type="text" id="textoUsuario" placeholder="Ingrese el texto aquí" ></textarea>
 
                 <div class="info">
                     <img src="imagenes/Frame 1.png" alt="Icono Información">
                 </div>
 
-                <div>
-                    <button id="Encriptar">Encriptar</button>
-                    <button id="Desencriptar">Desencriptar</button>
+                <div class="botones">
+                    <button class="boton-encriptar" id="Encriptar">Encriptar</button>
+                    <button class="boton-desencriptar" id="Desencriptar">Desencriptar</button>
                 </div>
-        
-                <div id="textoResultado"></div>
-
-                <div>
-                    <button id="botonCopiar">Copiar</button>
-                </div>
-
-                </aside>
+                
             </section>
+
+            <section class="mensajeEncriptad-Desencriptado">
+                <img id="imagenPredeterminada" src=
+                "imagenes/Muñeco.png" alt="Imagen predeterminada">
+                <textarea src=
+                "imagenes/Muñeco.png" class="mensaje" id="textoResultado" cols="30" rows="25" placeholder="Ningún mensaje fue encontrado" disabled></textarea>
+
+                <div>
+                    <button class="botonCopiar">Copiar</button>
+                </div>
+            </section>
+
         </main>
         <script src="app.js"></script>
 
